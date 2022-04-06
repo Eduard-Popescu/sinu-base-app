@@ -17,9 +17,9 @@ import java.io.Serializable;
 public class CompositeKeyTopicClass implements Serializable {
 
   @NotNull
-  private Long topicId;
+  private String topicId;
 
   @NotNull
-  private Long classId;
+  private String classId;
 
 }
