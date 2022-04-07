@@ -21,9 +21,9 @@ public class FirstController {
 //        //shall we log a little?
 //        ModelAndView mav = new ModelAndView();
 //
-//        User user = new User("Bubu");
-//        mav.addObject("fullUserObj", user);
-//        mav.addObject("numeStudent", user.getName());
+//        //User user = new User("Bubu");
+//        //mav.addObject("fullUserObj", user);
+//        //mav.addObject("numeStudent", user.getName());
 //        // adaugi x obiecte
 //        mav.setViewName("profile");
 //        //log the final outcome: Success y?
