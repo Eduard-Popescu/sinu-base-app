@@ -3,10 +3,7 @@ package ro.sd.a2.domain.entity;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @NoArgsConstructor
@@ -23,9 +20,13 @@ public class ClassBook {
   private String classBookId;
 
   @Column(name = "CLASS_BOOK_YEAR")
-  private String classBookYear;
+  private Integer classBookYear;
 
   @Column(name = "CLASS_BOOK_SEMESTER")
-  private String classBookSemester;
+  private Integer classBookSemester;
+
+  @ManyToOne(fetch = FetchType.LAZY)
+  @JoinColumn(name = "STUDENT_ID", nullable = false)
+  private Student student;
 
 }

@@ -1,0 +1,331 @@
+.navigation-links1-nav {
+  flex: 0 0 auto;
+  width: 109px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.navigation-links1-text1 {
+  margin-left: var(--dl-space-space-twounits);
+}
+.navigation-links1-root-class-name {
+  top: 53px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  position: absolute;
+}
+.navigation-links1-root-class-name1 {
+  top: 53px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  position: absolute;
+}
+@media(max-width: 767px) {
+  .navigation-links1-nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .navigation-links1-text {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links1-text1 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}
+
+.navigation-links-nav {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.navigation-links-text1 {
+  margin-left: var(--dl-space-space-twounits);
+}
+
+
+
+
+
+
+
+
+.navigation-links-root-class-name8 {
+  top: -8px;
+  left: -117px;
+  position: absolute;
+}
+
+.navigation-links-root-class-name10 {
+  top: -8px;
+  left: -117px;
+  position: absolute;
+}
+
+
+@media(max-width: 767px) {
+  .navigation-links-nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .navigation-links-text {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links-text1 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}
+
+.plata-taxe-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(216, 213, 213, 0.85);
+}
+.plata-taxe-header {
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: space-between;
+  background-color: rgba(239, 10, 10, 0.36);
+}
+.plata-taxe-image {
+  width: 123px;
+  height: 50px;
+}
+.plata-taxe-btn-group {
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.plata-taxe-burger-menu {
+  display: none;
+}
+.plata-taxe-icon {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.plata-taxe-mobile-menu {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  padding: 32px;
+  z-index: 100;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.plata-taxe-nav {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.plata-taxe-container1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+}
+.plata-taxe-image1 {
+  height: 2rem;
+}
+.plata-taxe-menu-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plata-taxe-icon02 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.plata-taxe-icon04 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+  margin-right: var(--dl-space-space-twounits);
+}
+.plata-taxe-icon06 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+  margin-right: var(--dl-space-space-twounits);
+}
+.plata-taxe-icon08 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.plata-taxe-form {
+  width: 726px;
+  height: 471px;
+  position: relative;
+}
+.plata-taxe-ul {
+  height: 113px;
+}
+.plata-taxe-textinput {
+  top: 185px;
+  left: 105px;
+  position: absolute;
+  border-style: ridge;
+  border-width: 1px;
+  background-color: var(--dl-color-gray-900);
+}
+.plata-taxe-textinput1 {
+  top: 185px;
+  left: 363px;
+  position: absolute;
+  border-style: double;
+  border-width: 0.1px;
+  background-color: var(--dl-color-gray-900);
+}
+.plata-taxe-button {
+  top: 282px;
+  left: 335px;
+  width: 57px;
+  position: absolute;
+  background-color: var(--dl-color-gray-900);
+}
+.plata-taxe-footer {
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  bottom: 0px;
+  height: 202px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: space-between;
+  background-color: rgba(239, 10, 10, 0.36);
+}
+.plata-taxe-container2 {
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.plata-taxe-image2 {
+  width: 186px;
+  height: 55px;
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.plata-taxe-nav1 {
+  flex: 0 0 auto;
+  display: flex;
+  margin-top: 0px;
+  align-items: center;
+  flex-direction: row;
+}
+.plata-taxe-text6 {
+  margin-left: 0px;
+}
+.plata-taxe-separator {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 0px;
+  display: flex;
+  margin-top: var(--dl-space-space-twounits);
+  align-items: flex-start;
+  margin-left: 0px;
+  border-color: var(--dl-color-gray-900);
+  border-style: solid;
+  border-width: 1px;
+  margin-right: 0px;
+  margin-bottom: var(--dl-space-space-twounits);
+  flex-direction: row;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+.plata-taxe-container3 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.plata-taxe-icon-group1 {
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media(max-width: 767px) {
+  .plata-taxe-header {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .plata-taxe-btn-group {
+    display: none;
+  }
+  .plata-taxe-burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .plata-taxe-footer {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .plata-taxe-image2 {
+    margin-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+  .plata-taxe-separator {
+    margin-top: var(--dl-space-space-oneandhalfunits);
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+  .plata-taxe-container3 {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media(max-width: 479px) {
+  .plata-taxe-header {
+    padding: var(--dl-space-space-unit);
+  }
+  .plata-taxe-mobile-menu {
+    padding: 16px;
+  }
+  .plata-taxe-footer {
+    padding: var(--dl-space-space-unit);
+  }
+  .plata-taxe-separator {
+    margin-top: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+  .plata-taxe-container3 {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

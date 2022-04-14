@@ -11,7 +11,6 @@ import java.util.List;
 @Builder
 @Getter
 @Setter
-@Data
 @Table(name = "PERSONAL_INFO")
 public class PersonalInfo {
 
@@ -31,8 +30,7 @@ public class PersonalInfo {
   @Column(name = "NPC")
   private String npc;
 
-  @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-  @JoinColumn(name = "ADDRESS_ID")
+  @OneToMany(mappedBy = "personalInfo" ,fetch = FetchType.LAZY, cascade = CascadeType.ALL)
   private List<Address> addressList;
 
 }
