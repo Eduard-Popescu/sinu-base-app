@@ -3,7 +3,6 @@ package ro.sd.a2.domain.entity;
 import lombok.*;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 @NoArgsConstructor
@@ -27,7 +26,8 @@ public class Student {
   @JoinColumn(name = "CLASS_ID")
   private Class aClass;
 
-  @OneToMany(mappedBy = "student" ,fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-  private List<ClassBook> classBooks;
+  @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+  @JoinColumn(name = "CLASS_BOOK_ID")
+  private ClassBook classBook;
 
 }
