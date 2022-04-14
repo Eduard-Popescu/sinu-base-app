@@ -11,7 +11,6 @@ import java.util.List;
 @Builder
 @Getter
 @Setter
-@Data
 @Table(name = "PERSONAL_INFO")
 public class PersonalInfo {
 

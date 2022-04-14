@@ -10,7 +10,6 @@ import javax.persistence.*;
 @Builder
 @Getter
 @Setter
-@Data
 @Table(name = "ADDRESS")
 public class Address {
 

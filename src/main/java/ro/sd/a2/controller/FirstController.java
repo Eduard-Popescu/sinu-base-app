@@ -25,16 +25,7 @@ public class FirstController {
         this.topicClassBookService = topicClassBookService;
     }
 
-    public void testMethod(String userId){
-        List<StudentGradeDTO> studentGradeDTOList = topicClassBookService.studentGrades(userId);
-        for(StudentGradeDTO studentGradeDTO : studentGradeDTOList){
-            System.out.println("Topic name:"+studentGradeDTO.getTopicName()+"\n"
-            +"Year:"+ studentGradeDTO.getYear()+"\n"+
-                "Semester:"+ studentGradeDTO.getSemester()+"\n"+
-                "Grade:"+ studentGradeDTO.getGrade()+"\n"+
-                "Examination: "+ studentGradeDTO.getExaminationMethod()+"\n");
-        }
-    }
+
 
 //    @GetMapping("/profile")
 //    public ModelAndView showProfile() {

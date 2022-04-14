@@ -5,6 +5,7 @@ import ro.sd.a2.domain.entity.PersonalInfo;
 import ro.sd.a2.domain.entity.Teacher;
 import ro.sd.a2.domain.entity.dto.NewTeacherDTO;
 import ro.sd.a2.domain.entity.dto.TeacherDTO;
+import ro.sd.a2.service.PersonalInfoService;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -56,5 +57,13 @@ public class TeacherMapper {
                 .personalInfo(personalInfo)
                 .entitling(newTeacherDTO.getEntitling())
                 .build();
+    }
+
+    public static Teacher teacherDtoToTeacher(TeacherDTO teacherDTO,String teacherName, PersonalInfo personalInfo){
+        return Teacher.builder()
+            .teacherId(teacherDTO.getTeacherId())
+            .entitling(teacherDTO.getEntitling())
+            .personalInfo(personalInfo)
+            .build();
     }
 }

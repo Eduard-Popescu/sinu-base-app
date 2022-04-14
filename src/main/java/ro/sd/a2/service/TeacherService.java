@@ -12,5 +12,9 @@ public interface TeacherService {
 
     void addTeacher(NewTeacherDTO newTeacherDTO);
 
+    TeacherDTO getTeacherById(String teacherId);
+
+    TeacherDTO getTeacherByName(String teacherName);
+
     Collection<TopicDTO> getAllTeachingTopics(String teacherId);
 }

@@ -8,7 +8,9 @@ import ro.sd.a2.controller.FirstController;
 import ro.sd.a2.domain.entity.Teacher;
 import ro.sd.a2.domain.entity.Topic;
 import ro.sd.a2.domain.entity.dto.TeacherDTO;
+import ro.sd.a2.domain.entity.dto.TopicDTO;
 import ro.sd.a2.mapper.TeacherMapper;
+import ro.sd.a2.mapper.TopicMapper;
 import ro.sd.a2.repository.TopicRepository;
 import ro.sd.a2.service.TeacherTopicService;
 import ro.sd.a2.service.TopicService;
@@ -29,6 +31,11 @@ public class TopicServiceImpl implements TopicService {
         this.teacherTopicService = teacherTopicService;
     }
 
+    /**
+     *
+     * @param topicId
+     * @return
+     */
     @Override
     public Collection<TeacherDTO> getAllTopicTeachers(String topicId) {
         if (StringUtil.isEmpty(topicId)) {
@@ -45,5 +52,27 @@ public class TopicServiceImpl implements TopicService {
         Collection<TeacherDTO> teacherDTOS = TeacherMapper.getTeacherDTOs(teachers);
 
         return teacherDTOS;
+    }
+
+    /**
+     *
+     * @param topicId
+     * @return
+     */
+    @Override
+    public TopicDTO getTopicById(String topicId) {
+        Topic topic = topicRepository.getTopicByTopicId(topicId);
+        return TopicMapper.getTopicDTO(topic);
+    }
+
+    /**
+     *
+     * @param topicName
+     * @return
+     */
+    @Override
+    public TopicDTO getTopicByTopicName(String topicName) {
+        Topic topic = topicRepository.getTopicByTopicName(topicName);
+        return TopicMapper.getTopicDTO(topic);
     }
 }

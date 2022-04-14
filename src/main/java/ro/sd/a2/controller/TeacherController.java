@@ -24,6 +24,10 @@ public class TeacherController {
     public TeacherController(TeacherService teacherService) { this.teacherService = teacherService; }
 
 
+    /**
+     *
+     * @return ModelAndView
+     */
     @GetMapping("/new")
     public ModelAndView newTeacher() {
         ModelAndView mav = new ModelAndView();
@@ -35,6 +39,11 @@ public class TeacherController {
         return mav;
     }
 
+    /**
+     *
+     * @param teacher
+     * @return ModelAndView
+     */
     @PostMapping("/add")
     public ModelAndView addNewTeacher(NewTeacherDTO teacher) {
         ModelAndView mav = new ModelAndView();
@@ -70,6 +79,11 @@ public class TeacherController {
         return mav;
     }
 
+    /**
+     *
+     * @param teacherId
+     * @return ModelAndView
+     */
     @GetMapping("/get-topics")
     public ModelAndView getTeachingTopics(@RequestParam String teacherId) {
         //validation if needed

@@ -28,6 +28,11 @@ public class TeacherTopicServiceImpl implements TeacherTopicService {
         this.topicRepository = topicRepository;
     }
 
+    /**
+     *
+     * @param teacherId
+     * @return Collection<Topic>
+     */
     @Override
     public Collection<Topic> getAllTeachingTopics(String teacherId) {
         Collection<TeacherTopic> teacherTopics = teacherTopicRepository.getTeacherTopicByTeacher_TeacherId(teacherId);
@@ -40,6 +45,11 @@ public class TeacherTopicServiceImpl implements TeacherTopicService {
         return teachingTopics;
     }
 
+    /**
+     *
+     * @param topicId
+     * @return Collection<Teacher>
+     */
     @Override
     public Collection<Teacher> getAllTopicTeachers(String topicId) {
         Collection<TeacherTopic> teacherTopics = teacherTopicRepository.getTeacherTopicByTopic_TopicId(topicId);

@@ -20,4 +20,13 @@ public class TopicMapper {
     public static Collection<TopicDTO> getTopicDTOs(Collection<Topic> topics) {
         return topics.stream().map(TopicMapper::getTopicDTO).collect(Collectors.toList());
     }
+
+    public static Topic topicDtoToTopic(TopicDTO topicDTO){
+        return Topic.builder()
+            .credits(topicDTO.getCredits())
+            .examinationType(topicDTO.getExaminationType())
+            .topicId(topicDTO.getTopicId())
+            .topicName(topicDTO.getTopicName())
+            .build();
+    }
 }

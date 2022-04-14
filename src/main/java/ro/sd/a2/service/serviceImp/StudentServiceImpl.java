@@ -21,6 +21,11 @@ public class StudentServiceImpl implements StudentService {
   }
 
 
+  /**
+   *
+   * @param userId
+   * @return List<StudentClassBookDTO>
+   */
   @Override
   public List<StudentClassBookDTO> getClassBookByUser(String userId) {
     Student student = studentRepository.getById(userId);

@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface TopicClassBookService {
 
-   List<StudentGradeDTO> studentGrades(String studentId);
+   List<StudentGradeDTO> studentGrades(String studentId,int classBookYear);
 
 }

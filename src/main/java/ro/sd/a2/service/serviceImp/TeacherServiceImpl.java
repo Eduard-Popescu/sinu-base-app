@@ -32,12 +32,43 @@ public class TeacherServiceImpl implements TeacherService {
         this.teacherTopicService = teacherTopicService;
     }
 
+    /**
+     *
+     * @param newTeacherDTO
+     */
     @Override
     public void addTeacher(NewTeacherDTO newTeacherDTO) {
         Teacher teacher = TeacherMapper.getTeacherFromNewTeacherDTO(newTeacherDTO);
         teacherRepository.save(teacher);
     }
 
+    /**
+     *
+     * @param teacherId
+     * @return TeacherDTO
+     */
+    @Override
+    public TeacherDTO getTeacherById(String teacherId) {
+        Teacher teacher = teacherRepository.getById(teacherId);
+        return TeacherMapper.getTeacherDTO(teacher);
+    }
+
+    /**
+     *
+     * @param teacherName
+     * @return TeacherDTO
+     */
+    @Override
+    public TeacherDTO getTeacherByName(String teacherName) {
+        Teacher teacher = teacherRepository.getTeacherByName(teacherName);
+        return TeacherMapper.getTeacherDTO(teacher);
+    }
+
+    /**
+     *
+     * @param teacherId
+     * @return Collection<TopicDTO>
+     */
     @Override
     public Collection<TopicDTO> getAllTeachingTopics(String teacherId) {
         if (StringUtil.isEmpty(teacherId)) {
