@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import ro.sd.a2.domain.entity.Fee;
 import ro.sd.a2.domain.entity.dto.FeeDto;
+import ro.sd.a2.domain.entity.dto.FeeInformationToSendDTO;
 import ro.sd.a2.domain.entity.dto.StudentFeeDTO;
 import ro.sd.a2.mapper.FeeMapper;
 import ro.sd.a2.repository.FeeRepository;
@@ -53,6 +54,12 @@ public class FeeServiceImpl implements FeeService {
     }
     log.debug("Response message:{}",message);
     return  message;
+  }
+
+  @Override
+  public FeeInformationToSendDTO getDetailsForEmail(String feeId) {
+    Fee fee = feeRepository.getById(feeId);
+    return FeeMapper.feeToFeeInformationToSendDTO(fee);
   }
 
 

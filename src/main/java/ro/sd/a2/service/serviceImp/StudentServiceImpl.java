@@ -31,4 +31,9 @@ public class StudentServiceImpl implements StudentService {
     Student student = studentRepository.getById(userId);
     return StudentMapper.studentToStudentClassBookDTO(student);
   }
+
+  @Override
+  public List<Student> getAllStudents() {
+    return studentRepository.findAll();
+  }
 }
