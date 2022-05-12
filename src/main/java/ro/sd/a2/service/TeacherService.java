@@ -2,6 +2,7 @@ package ro.sd.a2.service;
 
 import ro.sd.a2.domain.entity.Teacher;
 import ro.sd.a2.domain.entity.Topic;
+import ro.sd.a2.domain.entity.dto.ModifiedTeacherDTO;
 import ro.sd.a2.domain.entity.dto.NewTeacherDTO;
 import ro.sd.a2.domain.entity.dto.TeacherDTO;
 import ro.sd.a2.domain.entity.dto.TopicDTO;
@@ -17,4 +18,8 @@ public interface TeacherService {
     TeacherDTO getTeacherByName(String teacherName);
 
     Collection<TopicDTO> getAllTeachingTopics(String teacherId);
+
+    void updateTeacher(ModifiedTeacherDTO modifiedTeacherDTO);
+
+    void deleteTeacher(String teacherId);
 }

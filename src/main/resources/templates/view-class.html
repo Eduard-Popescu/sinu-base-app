@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <link href="../static/view-class.css" rel="stylesheet" th:href="@{/view-class.css}"/>
+    <div class="view-class-container">
+        <span class="view-class-text">Class students:</span>
+        <span class="view-class-text1">Name Email NPC Address</span>
+        <ul class="view-class-ul list">
+            <li class="list-item" th:each="student : ${students}">
+            <span th:text="${student.personalInfo.name}"></span>
+                <span th:text="${student.personalInfo.email}"></span>
+                <span th:text="${student.personalInfo.getNpc()}"></span>
+                <span th:text="${student.personalInfo.getAddressList()[0].getStreet()} + ', ' + ${student.personalInfo.getAddressList()[0].getCity()}"></span>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

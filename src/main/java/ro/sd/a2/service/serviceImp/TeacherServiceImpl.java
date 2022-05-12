@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import ro.sd.a2.controller.FirstController;
 import ro.sd.a2.domain.entity.Teacher;
 import ro.sd.a2.domain.entity.Topic;
+import ro.sd.a2.domain.entity.dto.ModifiedTeacherDTO;
 import ro.sd.a2.domain.entity.dto.NewTeacherDTO;
 import ro.sd.a2.domain.entity.dto.TeacherDTO;
 import ro.sd.a2.domain.entity.dto.TopicDTO;
@@ -86,4 +87,31 @@ public class TeacherServiceImpl implements TeacherService {
 
         return topicDTOS;
     }
+
+    /**
+     *
+     * @param modifiedTeacherDTO
+     */
+    @Override
+    public void updateTeacher(ModifiedTeacherDTO modifiedTeacherDTO) {
+
+        Teacher teacher = teacherRepository.getById(modifiedTeacherDTO.getTeacherId());
+
+        teacher.getPersonalInfo().setName(modifiedTeacherDTO.getName());
+        teacher.getPersonalInfo().setEmail(modifiedTeacherDTO.getEmail());
+        teacher.getPersonalInfo().setNpc(modifiedTeacherDTO.getNpc());
+        teacher.setEntitling(modifiedTeacherDTO.getEntitling());
+        teacher.getPersonalInfo().getAddressList().get(0).setCity(modifiedTeacherDTO.getCity());
+        teacher.getPersonalInfo().getAddressList().get(0).setStreet(modifiedTeacherDTO.getStreet());
+        teacher.getPersonalInfo().getAddressList().get(0).setCountry(modifiedTeacherDTO.getCountry());
+        teacher.getPersonalInfo().getAddressList().get(0).setPostalCode(modifiedTeacherDTO.getPostalCode());
+
+        teacherRepository.save(teacher);
+    }
+
+    @Override
+    public void deleteTeacher(String teacherId) {
+        teacherRepository.deleteById(teacherId);
+    }
+
 }

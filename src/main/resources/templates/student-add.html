@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <link href="../static/student-add.css" rel="stylesheet" th:href="@{/student-add.css}"/>
+    <div class="student-add-container">
+        <h1>Student modify</h1>
+        <form th:action="@{/admin/add-new-student}" th:object="${newStudentDTO}" method="POST">
+            <div class="student-add-container01">
+                <button class="student-add-button button" type="submit">Add</button>
+            </div>
+            <div class="student-add-container02">
+                <div class="student-add-container03">
+                    <div class="student-add-container04">
+                        <span class="student-add-text01">Name:</span>
+                    </div>
+                    <input type="text" class="input" th:field="*{name}"/>
+                </div>
+                <div class="student-add-container05">
+                    <div class="student-add-container06">
+                        <span class="student-add-text02">Email:</span>
+                    </div>
+                    <input type="text" class="input" th:field="*{email}"/>
+                </div>
+                <div class="student-add-container07">
+                    <div class="student-add-container08">
+                        <span class="student-add-text03">Password:</span>
+                    </div>
+                    <input type="text" class="input" th:field="*{password}"/>
+                </div>
+                <div class="student-add-container09">
+                    <div class="student-add-container10">
+                        <span class="student-add-text04">NPC:</span>
+                    </div>
+                    <input type="text" class="input" th:field="*{npc}"/>
+                </div>
+                <div class="student-add-container11">
+                    <div class="student-add-container12">
+                        <span class="student-add-text05">City:</span>
+                    </div>
+                    <input type="text" class="input" th:field="*{street}"/>
+                </div>
+                <div class="student-add-container13">
+                    <div class="student-add-container14">
+                        <span class="student-add-text06">Street:</span>
+                    </div>
+                    <input type="text" class="input" th:field="*{city}"/>
+                </div>
+                <div class="student-add-container15">
+                    <div class="student-add-container16">
+                        <span class="student-add-text07"><span>Country:</span></span>
+                    </div>
+                    <input type="text" class="input" th:field="*{country}"/>
+                </div>
+                <div class="student-add-container17">
+                    <div class="student-add-container18">
+                        <span class="student-add-text09">Postal Code:</span>
+                    </div>
+                    <input type="text" class="input" th:field="*{postalCode}"/>
+                </div>
+                <div class="student-add-container19">
+                    <div class="student-add-container20">
+                        <span class="student-add-text10">Class Id:</span>
+                    </div>
+                    <input type="text" class="input" th:field="*{classId}"/>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

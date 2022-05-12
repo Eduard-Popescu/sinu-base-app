@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <link href="../static/teacher-crud.css" rel="stylesheet" th:href="@{/teacher-crud.css}"/>
+    <div class="teacher-crud-container">
+        <h1>Teacher CRUD</h1>
+        <form th:action="@{/admin/modify-teacher}" th:object="${modifiedTeacherDTO}" method="POST">
+            <input type="hidden" th:name="teacherId" th:value="${teacherDTO.teacherId}"/>
+            <div class="teacher-crud-container01">
+                <button class="teacher-crud-button button" type="submit" th:name="action" th:value="submit">Modify</button>
+                <button class="teacher-crud-button1 button" type="submit" th:name="action" th:value="delete">Delete</button>
+            </div>
+            <div class="teacher-crud-container02">
+                <div class="teacher-crud-container03">
+                    <div class="teacher-crud-container04">
+                        <span class="teacher-crud-text01">Name:</span>
+                    </div>
+                    <input type="text" class="input" th:name="name" th:value="${teacherDTO.name}"/>
+                </div>
+                <div class="teacher-crud-container05">
+                    <div class="teacher-crud-container06">
+                        <span class="teacher-crud-text02">Email:</span>
+                    </div>
+                    <input type="text"  class="input" th:name="email" th:value="${teacherDTO.email}" />
+                </div>
+                <div class="teacher-crud-container07">
+                    <div class="teacher-crud-container08">
+                        <span class="teacher-crud-text03">Entitling:</span>
+                    </div>
+                    <input type="text" class="input" th:name="entitling" th:value="${teacherDTO.entitling}"/>
+                </div>
+                <div class="teacher-crud-container09">
+                    <div class="teacher-crud-container10">
+                        <span class="teacher-crud-text04">NPC:</span>
+                    </div>
+                    <input type="text" class="input" th:name="npc" th:value="${teacherDTO.npc}"/>
+                </div>
+                <div class="teacher-crud-container11">
+                    <div class="teacher-crud-container12">
+                        <span class="teacher-crud-text05">City:</span>
+                    </div>
+                    <input type="text" class="input" th:name="city" th:value="${teacherDTO.addressList[0].city}" />
+                </div>
+                <div class="teacher-crud-container13">
+                    <div class="teacher-crud-container14">
+                        <span class="teacher-crud-text06">Street:</span>
+                    </div>
+                    <input type="text"  class="input" th:name="street" th:value="${teacherDTO.addressList[0].street}"/>
+                </div>
+                <div class="teacher-crud-container15">
+                    <div class="teacher-crud-container16">
+                        <span class="teacher-crud-text07"><span>Country:</span></span>
+                    </div>
+                    <input type="text" class="input" th:name="country" th:value="${teacherDTO.addressList[0].country}" />
+                </div>
+                <div class="teacher-crud-container17">
+                    <div class="teacher-crud-container18">
+                        <span class="teacher-crud-text09">Postal Code:</span>
+                    </div>
+                    <input type="text" class="input" th:name="postalCode" th:value="${teacherDTO.addressList[0].postalCode}" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

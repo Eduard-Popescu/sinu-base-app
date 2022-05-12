@@ -1,0 +1,203 @@
+.student-add-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    box-shadow: 5px 5px 10px 0px #d6d0d0;
+    min-height: 100vh;
+    align-items: center;
+    border-color: var(--dl-color-gray-black);
+    border-width: var(--dl-size-size-xsmall);
+    flex-direction: column;
+    background-color: #f95a5a;
+}
+.student-add-container01 {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: relative;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+.student-add-button {
+    height: 44px;
+}
+.student-add-container02 {
+    width: 1176px;
+    height: 655px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.student-add-container03 {
+    width: 1156px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-add-container04 {
+    flex: 0 0 auto;
+    width: 98px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-add-text01 {
+    align-self: center;
+    text-align: center;
+}
+.student-add-container05 {
+    width: 1156px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-add-container06 {
+    flex: 0 0 auto;
+    width: 98px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-add-text02 {
+    align-self: center;
+    text-align: center;
+}
+.student-add-container07 {
+    width: 1156px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-add-container08 {
+    flex: 0 0 auto;
+    width: 98px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-add-text03 {
+    align-self: center;
+    text-align: center;
+}
+.student-add-container09 {
+    width: 1156px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-add-container10 {
+    flex: 0 0 auto;
+    width: 98px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-add-text04 {
+    align-self: center;
+    text-align: center;
+}
+.student-add-container11 {
+    width: 1156px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-add-container12 {
+    flex: 0 0 auto;
+    width: 98px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-add-text05 {
+    align-self: center;
+    text-align: center;
+}
+.student-add-container13 {
+    width: 1156px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-add-container14 {
+    flex: 0 0 auto;
+    width: 98px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-add-text06 {
+    align-self: center;
+    text-align: center;
+}
+.student-add-container15 {
+    width: 1156px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-add-container16 {
+    flex: 0 0 auto;
+    width: 98px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-add-text07 {
+    align-self: center;
+    text-align: center;
+}
+.student-add-container17 {
+    width: 1156px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-add-container18 {
+    flex: 0 0 auto;
+    width: 98px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-add-text09 {
+    align-self: center;
+    text-align: center;
+}
+.student-add-container19 {
+    width: 1156px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-add-container20 {
+    flex: 0 0 auto;
+    width: 98px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-add-text10 {
+    align-self: center;
+    text-align: center;
+}
