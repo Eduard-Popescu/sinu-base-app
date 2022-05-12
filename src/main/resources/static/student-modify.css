@@ -1,0 +1,206 @@
+.student-modify-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    box-shadow: 5px 5px 10px 0px #d6d0d0;
+    min-height: 100vh;
+    align-items: center;
+    border-color: var(--dl-color-gray-black);
+    border-width: var(--dl-size-size-xsmall);
+    flex-direction: column;
+    background-color: #f95a5a;
+}
+.student-modify-container01 {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: relative;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+.student-modify-button {
+    height: 44px;
+}
+.student-modify-button1 {
+    height: 45px;
+}
+.student-modify-container02 {
+    width: 1176px;
+    height: 655px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.student-modify-container03 {
+    width: 1156px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-modify-container04 {
+    flex: 0 0 auto;
+    width: 98px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-modify-text01 {
+    align-self: center;
+    text-align: center;
+}
+.student-modify-container05 {
+    width: 1156px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-modify-container06 {
+    flex: 0 0 auto;
+    width: 98px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-modify-text02 {
+    align-self: center;
+    text-align: center;
+}
+.student-modify-container07 {
+    width: 1156px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-modify-container08 {
+    flex: 0 0 auto;
+    width: 98px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-modify-text03 {
+    align-self: center;
+    text-align: center;
+}
+.student-modify-container09 {
+    width: 1156px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-modify-container10 {
+    flex: 0 0 auto;
+    width: 98px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-modify-text04 {
+    align-self: center;
+    text-align: center;
+}
+.student-modify-container11 {
+    width: 1156px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-modify-container12 {
+    flex: 0 0 auto;
+    width: 98px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-modify-text05 {
+    align-self: center;
+    text-align: center;
+}
+.student-modify-container13 {
+    width: 1156px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-modify-container14 {
+    flex: 0 0 auto;
+    width: 98px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-modify-text06 {
+    align-self: center;
+    text-align: center;
+}
+.student-modify-container15 {
+    width: 1156px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-modify-container16 {
+    flex: 0 0 auto;
+    width: 98px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-modify-text07 {
+    align-self: center;
+    text-align: center;
+}
+.student-modify-container17 {
+    width: 1156px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-modify-container18 {
+    flex: 0 0 auto;
+    width: 98px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-modify-text09 {
+    align-self: center;
+    text-align: center;
+}
+.student-modify-container19 {
+    width: 1156px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-modify-container20 {
+    flex: 0 0 auto;
+    width: 98px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.student-modify-text10 {
+    align-self: center;
+    text-align: center;
+}

@@ -1,0 +1,34 @@
+.view-class-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    border-color: var(--dl-color-gray-black);
+    border-style: solid;
+    border-width: var(--dl-size-size-xsmall);
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #ef5454;
+}
+.view-class-text {
+    margin-top: var(--dl-space-space-twounits);
+    text-align: center;
+}
+.view-class-text1 {
+    margin-top: var(--dl-space-space-unit);
+}
+.view-class-ul {
+    top: var(--dl-space-space-fiveunits);
+    left: 16px;
+    width: 1175px;
+    height: 130px;
+    display: flex;
+    position: absolute;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
