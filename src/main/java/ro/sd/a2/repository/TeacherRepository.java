@@ -11,4 +11,7 @@ public interface TeacherRepository extends JpaRepository<Teacher, String> {
   @Query("SELECT T FROM Teacher T WHERE T.personalInfo.name = ?1")
   Teacher getTeacherByName(String teacherName);
 
+  @Query("SELECT T FROM Teacher T WHERE T.personalInfo.email = ?1")
+  Teacher getTeacherByEmail(String email);
+
 }

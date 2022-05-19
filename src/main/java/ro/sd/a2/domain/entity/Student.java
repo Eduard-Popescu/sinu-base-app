@@ -23,7 +23,7 @@ public class Student {
   @JoinColumn(name = "PERSONAL_INFO_ID")
   private PersonalInfo personalInfo;
 
-  @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+  @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.DETACH)
   @JoinColumn(name = "CLASS_ID")
   private Class aClass;
 

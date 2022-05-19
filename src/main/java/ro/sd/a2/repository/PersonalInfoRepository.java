@@ -9,4 +9,7 @@ public interface PersonalInfoRepository extends JpaRepository<PersonalInfo, Stri
   @Query("SELECT PI FROM PersonalInfo PI WHERE PI.name=?1")
   PersonalInfo getPersonalInfoByName(String personalName);
 
+  @Query("SELECT PI FROM PersonalInfo PI WHERE PI.email=?1")
+  PersonalInfo getPersonalInfoByEmail(String email);
+
 }

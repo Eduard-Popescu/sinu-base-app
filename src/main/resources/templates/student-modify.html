@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <link href="../static/student-modify.css" rel="stylesheet" th:href="@{/student-modify.css}"/>
+    <div class="student-modify-container">
+        <h1>Student modify</h1>
+        <form th:action="@{/admin/modify-student}" th:object="${modifiedStudentDTO}" method="POST">
+            <input type="hidden" th:name="studentId" th:value="${studentDTO.studentId}"/>
+            <div class="student-modify-container01">
+            <button class="student-modify-button button" type="submit" th:name="action" value="submit">Modify</button>
+            <button class="student-modify-button1 button" type="submit" th:name="action" value="delete">Delete</button>
+            </div>
+            <div class="student-modify-container02">
+                <div class="student-modify-container03">
+                    <div class="student-modify-container04">
+                        <span class="student-modify-text01">Name:</span>
+                    </div>
+                    <input type="text" class="input" th:name="name" th:value="${studentDTO.personalInfo.name}"/>
+                </div>
+                <div class="student-modify-container05">
+                    <div class="student-modify-container06">
+                        <span class="student-modify-text02">Email:</span>
+                    </div>
+                    <input type="text" class="input" th:name="email" th:value="${studentDTO.personalInfo.email}"/>
+                </div>
+                <div class="student-modify-container07">
+                    <div class="student-modify-container08">
+                        <span class="student-modify-text03">NPC:</span>
+                    </div>
+                    <input type="text" class="input" th:name="npc" th:value="${studentDTO.personalInfo.npc}"/>
+                </div>
+                <div class="student-modify-container09">
+                    <div class="student-modify-container10">
+                        <span class="student-modify-text04">City:</span>
+                    </div>
+                    <input type="text" class="input" th:name="city" th:value="${studentDTO.personalInfo.addressList.get(0).city}"/>
+                </div>
+                <div class="student-modify-container11">
+                    <div class="student-modify-container12">
+                        <span class="student-modify-text05">Street:</span>
+                    </div>
+                    <input type="text" class="input" th:name="street" th:value="${studentDTO.personalInfo.addressList.get(0).street}"/>
+                </div>
+                <div class="student-modify-container13">
+                    <div class="student-modify-container14">
+                        <span class="student-modify-text06"><span>Country:</span></span>
+                    </div>
+                    <input type="text" class="input" th:name="country" th:value="${studentDTO.personalInfo.addressList.get(0).country}"/>
+                </div>
+                <div class="student-modify-container15">
+                    <div class="student-modify-container16">
+                        <span class="student-modify-text08">Postal Code:</span>
+                    </div>
+                    <input type="text" class="input" th:name="postalCode" th:value="${studentDTO.personalInfo.addressList.get(0).postalCode}"/>
+                </div>
+                <div class="student-modify-container17">
+                    <div class="student-modify-container18">
+                        <span class="student-modify-text09">Class Id:</span>
+                    </div>
+                    <input type="text" class="input" th:name="classId" th:value="${studentDTO.getAClass().classId}"/>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
