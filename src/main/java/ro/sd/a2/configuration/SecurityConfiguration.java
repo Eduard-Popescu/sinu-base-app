@@ -9,13 +9,13 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
-import ro.sd.a2.service.UserService;
+import ro.sd.a2.service.StudentService;
 
 @Configuration
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
   @Autowired
-  private UserService userService;
+  private StudentService studentService;
 
   @Override
   protected void configure(HttpSecurity http) throws Exception {
@@ -49,7 +49,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
   @Bean
   public DaoAuthenticationProvider authenticationProvider() {
     DaoAuthenticationProvider auth = new DaoAuthenticationProvider();
-    auth.setUserDetailsService(userService);
+    auth.setUserDetailsService(studentService);
     auth.setPasswordEncoder(passwordEncoder());
     return auth;
   }

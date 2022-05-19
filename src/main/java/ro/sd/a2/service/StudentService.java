@@ -1,18 +1,20 @@
 package ro.sd.a2.service;
 
+import org.springframework.security.core.userdetails.UserDetailsService;
 import ro.sd.a2.domain.entity.Student;
-import ro.sd.a2.domain.entity.dto.ModifiedStudentDTO;
-import ro.sd.a2.domain.entity.dto.NewStudentDTO;
-import ro.sd.a2.domain.entity.dto.StudentClassBookDTO;
-import ro.sd.a2.domain.entity.dto.StudentDTO;
+import ro.sd.a2.domain.entity.dto.*;
 
 import java.util.List;
 
-public interface StudentService {
+public interface StudentService extends UserDetailsService {
 
   List<StudentClassBookDTO> getClassBookByUser(String userId);
 
   StudentDTO getStudentById(String studentId);
+
+  Student getStudentByEmail(String email);
+
+  void save(UserRegistrationDTO userRegistrationDTO);
 
   void modifyStudent(ModifiedStudentDTO modifiedStudentDTO);
 

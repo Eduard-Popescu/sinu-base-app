@@ -26,6 +26,15 @@ public class AdminController {
         this.studentService = studentService;
     }
 
+    @GetMapping("/selIdT")
+    public String selIdT(){
+        return "select-id-teacher";
+    }
+    @GetMapping("/selIdS")
+    public String selIdS(){
+        return "select-id-student";
+    }
+
     @GetMapping("/viewclass")
     public ModelAndView viewGroup(@RequestParam String classId) {
         ModelAndView mav = new ModelAndView();

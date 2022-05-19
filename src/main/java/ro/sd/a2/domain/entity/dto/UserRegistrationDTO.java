@@ -1,5 +1,6 @@
 package ro.sd.a2.domain.entity.dto;
 
+import lombok.*;
 import ro.sd.a2.annotations.FieldMatch;
 
 import javax.validation.constraints.AssertTrue;
@@ -10,13 +11,16 @@ import javax.validation.constraints.NotEmpty;
     @FieldMatch(first = "password", second = "confirmPassword", message = "The password fields must match"),
     @FieldMatch(first = "email", second = "confirmEmail", message = "The email fields must match")
 })
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 public class UserRegistrationDTO {
 
   @NotEmpty
-  private String firstName;
-
-  @NotEmpty
-  private String lastName;
+  private String name;
 
   @NotEmpty
   private String password;
@@ -32,23 +36,33 @@ public class UserRegistrationDTO {
   @NotEmpty
   private String confirmEmail;
 
+  @NotEmpty
+  private String npc;
+
+  @NotEmpty
+  private String street;
+
+  @NotEmpty
+  private String city;
+
+  @NotEmpty
+  private String country;
+
+  @NotEmpty
+  private String postalCode;
+
+  @NotEmpty
+  private String classId;
+
   @AssertTrue
   private Boolean terms;
 
-  public String getFirstName() {
-    return firstName;
+  public String getName() {
+    return name;
   }
 
-  public void setFirstName(String firstName) {
-    this.firstName = firstName;
-  }
-
-  public String getLastName() {
-    return lastName;
-  }
-
-  public void setLastName(String lastName) {
-    this.lastName = lastName;
+  public void setName(String name) {
+    this.name = name;
   }
 
   public String getPassword() {

@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import ro.sd.a2.service.UserService;
+import ro.sd.a2.domain.entity.Student;
+import ro.sd.a2.domain.entity.dto.UserRegistrationDTO;
+import ro.sd.a2.service.serviceImp.StudentServiceImpl;
 
 import javax.validation.Valid;
 
@@ -17,11 +19,11 @@ import javax.validation.Valid;
 public class UserRegistrationController {
 
   @Autowired
-  private UserService userService;
+  private StudentServiceImpl studentService;
 
   @ModelAttribute("user")
-  public UserRegistrationDto userRegistrationDto() {
-    return new UserRegistrationDto();
+  public UserRegistrationDTO userRegistrationDto() {
+    return new UserRegistrationDTO();
   }
 
   @GetMapping
@@ -30,10 +32,10 @@ public class UserRegistrationController {
   }
 
   @PostMapping
-  public String registerUserAccount(@ModelAttribute("user") @Valid UserRegistrationDto userDto,
+  public String registerUserAccount(@ModelAttribute("user") @Valid UserRegistrationDTO userDto,
                                     BindingResult result) {
 
-    User existing = userService.findByEmail(userDto.getEmail());
+    Student existing = studentService.getStudentByEmail(userDto.getEmail());
     if (existing != null) {
       result.rejectValue("email", null, "There is already an account registered with that email");
     }
@@ -42,7 +44,7 @@ public class UserRegistrationController {
       return "registration";
     }
 
-    userService.save(userDto);
+    studentService.save(userDto);
     return "redirect:/registration?success";
   }
 
